@@ -162,6 +162,7 @@ img {
   justify-content: space-between;
   width: 100%;
   background-color: #4d4d4d;
+  z-index: 2;
 }
 .nav .menu {
   margin: 1rem;
@@ -169,9 +170,18 @@ img {
 .nav .menu .menu-btn {
   width: 3rem;
   height: auto;
+  cursor: pointer;
 }
 .nav .menu .menu-items {
   display: none;
+  position: absolute;
+  background-color: #4d4d4d;
+  min-width: 160px;
+  z-index: 2;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  border: 1px solid white;
 }
 .nav .nav-txt {
   margin: 0.5rem;
@@ -186,4 +196,7 @@ img {
   border-radius: 10px;
   color: #4d4d4d;
   background-color: white;
+}
+.z-open {
+  display: flex;
 }

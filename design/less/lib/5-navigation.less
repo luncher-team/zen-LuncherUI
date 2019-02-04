@@ -3,6 +3,7 @@
   justify-content: space-between;
   width: 100%;
   background-color: @nav-bkgrd;
+  z-index: 2;
 
   .menu {
     margin: 1rem;
@@ -10,9 +11,18 @@
     .menu-btn {
       width: 3rem;
       height: auto;
+      cursor: pointer;
     }
     .menu-items {
       display: none;
+      position: absolute;
+      background-color: @nav-bkgrd;
+      min-width: 160px;
+      z-index: 2;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+      border: 1px solid white;
     }
   }
 
@@ -32,4 +42,8 @@
       background-color: @nav-txt;
     }
   }
+}
+
+.z-open {
+  display: flex;
 }
