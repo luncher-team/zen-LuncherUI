@@ -210,18 +210,20 @@ img {
 .card-box .card {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  border: 1.5px solid #b3b3b3;
   border-radius: 10px;
   max-width: 30%;
   height: auto;
   text-align: center;
   padding: 1rem;
   margin: 1rem;
+  background-color: #cccccc;
 }
 .card-box .card img {
   width: 80%;
   height: auto;
   margin: 1.5rem 9%;
+  border-radius: 5px;
 }
 .card-box .card .card-info i {
   font-size: 3rem;
