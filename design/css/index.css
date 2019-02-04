@@ -156,6 +156,7 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding-top: 8rem;
 }
 .nav {
   display: flex;
@@ -201,15 +202,45 @@ img {
 .z-open {
   display: flex;
 }
-.card {
+.card-box {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card-box .card {
+  display: flex;
+  flex-direction: column;
   border: 1px solid black;
   border-radius: 10px;
-  max-width: 200px;
+  max-width: 30%;
   height: auto;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
 }
-.card img {
-  width: 10rem;
+.card-box .card img {
+  width: 80%;
   height: auto;
-  margin: auto;
+  margin: 1.5rem 9%;
+}
+.card-box .card .card-info i {
+  font-size: 3rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  color: red;
+}
+.card-box .card .card-info i:hover {
+  color: #666666;
+}
+.card-box .card .card-info button {
+  width: 85%;
+  height: 3.5rem;
+  margin: 1.5rem auto;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+.card-box .card .card-info button:hover {
+  background-color: white;
+  color: red;
 }

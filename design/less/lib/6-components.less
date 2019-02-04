@@ -1,14 +1,53 @@
 //School Cards
+.card-box {
+  //border: 1px solid red;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
 .card {
   display: flex;
+  flex-direction: column;
   border: 1px solid black;
   border-radius: 10px;
-  max-width: 200px;
+  max-width: 30%;
   height: auto;
+  text-align: center;
+  padding: 1rem;
+  margin: 1.0rem;
 
   img {
-    width: 10rem;
+    width: 80%;
     height: auto;
-    margin: auto;
+    margin: 1.5rem 9%;
   }
+
+  .card-info {
+
+    i {
+      font-size: 3rem;
+      margin: 0.5rem;
+      cursor: pointer;
+      color: @card-btn;
+
+      &:hover {
+        color: @black-6;
+      }
+    }
+
+    button {
+      width: 85%;
+      height: 3.5rem;
+      margin: 1.5rem auto;
+      background-color: @card-btn;
+      color: @card-hv;
+      cursor: pointer;
+
+      &:hover {
+        background-color: @card-hv;
+        color: @card-btn;
+      }
+    }
+  }
+}
 }
