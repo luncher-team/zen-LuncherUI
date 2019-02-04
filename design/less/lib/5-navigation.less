@@ -1,3 +1,35 @@
-.nav{
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: @nav-bkgrd;
 
+  .menu {
+    margin: 1rem;
+
+    .menu-btn {
+      width: 3rem;
+      height: auto;
+    }
+    .menu-items {
+      display: none;
+    }
+  }
+
+  .nav-txt {
+    margin: 0.5rem;
+    font-size: 3rem;
+    color: @nav-txt;
+  }
+
+  .login {
+    margin: 1rem;
+
+    button {
+      font-size: 1.7rem;
+      border-radius: 10px;
+      color: @nav-bkgrd;
+      background-color: @nav-txt;
+    }
+  }
 }
