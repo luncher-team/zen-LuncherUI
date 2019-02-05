@@ -209,10 +209,11 @@ img {
 }
 .card-box .card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   border: 1.5px solid #b3b3b3;
   border-radius: 10px;
-  max-width: 30%;
+  max-width: 380px;
   height: auto;
   text-align: center;
   padding: 1rem;
@@ -220,21 +221,28 @@ img {
   background-color: #cccccc;
 }
 .card-box .card img {
-  width: 80%;
-  height: auto;
-  margin: 1.5rem 9%;
+  width: 13rem;
+  height: 9rem;
   border-radius: 5px;
 }
-.card-box .card .card-info i {
+.card-box .card .card-info {
+  width: 49%;
+  height: auto;
+  margin: 1.5rem 3%;
+}
+.card-box .card .card-btns {
+  width: 100%;
+}
+.card-box .card .card-btns i {
   font-size: 3rem;
-  margin: 0.5rem;
+  margin: 0.5rem 1.5rem;
   cursor: pointer;
   color: red;
 }
-.card-box .card .card-info i:hover {
+.card-box .card .card-btns i:hover {
   color: #666666;
 }
-.card-box .card .card-info button {
+.card-box .card .card-btns button {
   width: 85%;
   height: 3.5rem;
   margin: 1.5rem auto;
@@ -242,7 +250,7 @@ img {
   color: white;
   cursor: pointer;
 }
-.card-box .card .card-info button:hover {
+.card-box .card .card-btns button:hover {
   background-color: white;
   color: red;
 }
